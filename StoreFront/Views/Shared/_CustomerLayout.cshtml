@@ -1,0 +1,35 @@
+﻿@model StoreFront.Models.CustomerBaseViewModel
+
+@{ 
+    ViewBag.Title = "Home";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <p class="title1">STORE FRONT</p>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><b href="#">View Cart</b></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div>
+            @RenderBody()
+        </div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>
